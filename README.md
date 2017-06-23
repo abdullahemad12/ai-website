@@ -1,4 +1,4 @@
-<p align = "center"> machinelearning-department</p>
+#<p align = "center"> machinelearning-department</p>
 a website for the newly created machine learning group in the GUC
 
 
