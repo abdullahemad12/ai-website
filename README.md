@@ -5,7 +5,7 @@ a website for the newly created machine learning group in the GUC
 # <p align = "center"> Contents of the webiste</p> 
 
 <ol>
-	<li>home page:
+	<li><b>home page:</b>
 		<ul>
 			<li>
 				upcoming Events
@@ -15,7 +15,7 @@ a website for the newly created machine learning group in the GUC
 			</li>
 		</ul>
 	</li>
-	<li>projects and researches: 
+	<li><b>projects and researches:</b> 
 		<ul>
 			<li>
 				A list of all the projects done and in process by the Machine learning departmen
@@ -25,7 +25,7 @@ a website for the newly created machine learning group in the GUC
 			</li>
 		</ul>
 	</li>
-	<li> Courses
+	<li> <b>Courses</b>
 		<ul>
 			<li>
 				a list of all the courses offered by the machine learning department
