@@ -1,11 +1,11 @@
-#<p align = "center"> machinelearning-department</p>
+# <p align = "center"> machinelearning-department</p>
 a website for the newly created machine learning group in the GUC
 
 
-<p align = "center"> Contents of the webiste</p> 
+# <p align = "center"> Contents of the webiste</p> 
 
 <ol>
-	<li>home page:
+	<li><b>home page:</b>
 		<ul>
 			<li>
 				upcoming Events
@@ -25,6 +25,7 @@ a website for the newly created machine learning group in the GUC
 			</li>
 		</ul>
 	</li>
+
 	<li> Courses (editable)
 		<ul>
 			<li>
