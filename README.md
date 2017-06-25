@@ -55,7 +55,7 @@ a website for the newly created machine learning group in the GUC
 			<li>This page is only visible to the admin</li>
 		</ul>
 	</li>
-	<li>My account
+	<li><b>My account</b>
 		<ul>
 			<li>users can reset their passwords</li>
 			<li>users can change the personal info</li>
