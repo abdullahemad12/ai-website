@@ -15,7 +15,7 @@ a website for the newly created machine learning group in the GUC
 			</li>
 		</ul>
 	</li>
-	<li>projects and researches (editable)
+	<li><b>projects and researches (editable)</b>
 		<ul>
 			<li>
 				A list of all the projects done and in process by the Machine learning departmen
@@ -25,9 +25,20 @@ a website for the newly created machine learning group in the GUC
 			</li>
 		</ul>
 	</li>
-	<li> Courses (editable)
+	<li><b> Courses (editable)</b>
 		<ul>
 			<li>a list of all the courses offered by the machine learning department</li>
+		</ul>
+	</li>
+	<li>Events
+		<ul>
+			<li>Upcoming Events</li>
+			<li>Archieved Events</li>
+		</ul>
+	</li>
+	<li>Contact us
+		<ul>
+			<li>Important emails</li>
 		</ul>
 	</li>
 
