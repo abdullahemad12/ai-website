@@ -111,11 +111,13 @@ a website for the newly created machine learning group in the GUC
 		</ul>
 	</li>
 	<li>Events
-		<li>title</li>
-		<li>Description</li>
-		<li>Location</li>
-		<li>Starts at</li>
-		<li>Ends at</li>
+		<ul>
+			<li>title</li>
+			<li>Description</li>
+			<li>Location</li>
+			<li>Starts at</li>
+			<li>Ends at</li>
+		</ul>
 	</li>
 </ol>
 
