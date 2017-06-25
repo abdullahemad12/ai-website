@@ -142,6 +142,10 @@ a website for the newly created machine learning group in the GUC
 	<li>contact</li>
 </ol>
 
+# <p align = "center">Conditions</p>
+This site was dedicated to the GUC machine learning department under two conditions:
+1) Credits should be given to Abdullah Emad and Ahmed Shawky for building this website
+2) The contents of the page should remain accessible to the public. Unless some confidential information must be placed on the website and sharing it will effect any member of the community.. Otherwise, research papers, courses, project, etc  should remain public
 
 
 
