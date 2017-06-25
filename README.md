@@ -8,14 +8,14 @@ a website for the newly created machine learning group in the GUC
 	<li><b>home page:</b>
 		<ul>
 			<li>
-				upcoming Events
+				small slide show
 			</li>
 			<li>
-				Team admins and members 
+				upcoming Events
 			</li>
 		</ul>
 	</li>
-	<li><b>projects and researches (editable)</b>
+	<li><b>projects and research (editable)</b>
 		<ul>
 			<li>
 				A list of all the projects done and in process by the Machine learning departmen
@@ -38,15 +38,110 @@ a website for the newly created machine learning group in the GUC
 	</li>
 	<li><b>Contact us</b>
 		<ul>
-			<li>Important emails</li>
+			<li>Fetches the phone number and email of the admin from the data base (dynamic)</li>
+			<li>includes all the facebook accounts, instagram ...etc (static)</li>
 		</ul>
 	</li>
 	<li> <b>About Page (editable)</b>
 		<ul>
 			<li>
 				About the Machine learning department <br> Note: Credit for ourself
-			</li>		
+			</li>
+			<li>This should right directly to the server not to the database</li>		
 		</ul>
+	</li>
+	<li> <b>Footer</b>
+		<ul>
+			<li>Copyrights</li>
+			<li>Github repository</li>
+			<li>Facebook Group</li>
+			<li>Youtube</li>
+			<li>Instagram</li>
+		<ul>
 	</li>
 
 </ol> 
+
+# <p align = "center">Admins and members auth:</p>
+
+<ul>
+	<li>Admins
+		<ul>
+			<li>Remove and add members</li>
+		</ul>
+	</li>
+	<li>Both
+		<ul>
+			<li><b> Events</b> Create new events</li>
+			<li><b>Events</b> All events are archieved automatically</li>
+			<li><b>Projects and research</b> Add a project or a research</li>
+			<li><b>Projects and research</b> Remove a project or a research</li>
+			<li><b>Courses</b> <Add Courses</li>
+			<li><b>Courses</b> Remove Courses</li>
+			<li><b>About</b> edit the content of the about page</li>
+		</ul>
+	</li>
+</ul>
+# <p align = "center">Database tables</p>
+<ol>
+	<li>Users (default)
+		<ul>
+			<li>Profile picture Nullable</li>
+			<li>Email required</li>
+			<li>Phone number Nullabel</li>
+			<li>Authority</li>
+		</ul>
+	</li>
+	<li>Projects
+		<ul>
+		<li>document_type (research/project)</li>
+		<li>title</li>
+		<li>Body NUllable</li>
+		<li>created at</li>
+		<li>Updated at</li>
+		</ul>
+	</li>
+	<li>Courses
+		<ul>
+			<li>title</li>
+			<li>Instructor</li>
+			<li>description</li>
+			<li>Created_at</li>
+			<li>Updated_at</li>
+		</ul>
+	</li>
+	<li>Events
+		<li>title</li>
+		<li>Description</li>
+		<li>Location</li>
+		<li>Starts at</li>
+		<li>Ends at</li>
+	</li>
+</ol>
+
+
+
+# <p align = "center">Tasks</p>
+
+# Abdullah Emad:
+<ol>
+	<li>Migrations</li>
+	<li>Header and footer</li>
+	<li>projects and research</li>
+	<li>events</li>
+	<li>Members feature (undecided)</li>
+</ol>
+
+# Ahmed Shawky
+<ol>
+	<li>home page</li>
+	<li>Courses</li>
+	<li>About page</li>
+	<li>contact</li>
+</ol>
+
+
+
+
+
+
