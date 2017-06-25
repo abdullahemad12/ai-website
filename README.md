@@ -53,7 +53,7 @@ a website for the newly created machine learning group in the GUC
 	<li> <b>Add/remove members</b>
 		<ul>
 			<li>This page is only visible to the admin</li>
-		<ul>
+		</ul>
 	</li>
 	<li> <b>Footer</b>
 		<ul>
