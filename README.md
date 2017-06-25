@@ -44,7 +44,7 @@ a website for the newly created machine learning group in the GUC
 	<li> <b>About Page (editable)</b>
 		<ul>
 			<li>
-				About the Machine learning department <br> Note: Credits for ourself
+				About the Machine learning department <br> Note: Credit for ourself
 			</li>		
 		</ul>
 	</li>
