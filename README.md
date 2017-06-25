@@ -30,15 +30,22 @@ a website for the newly created machine learning group in the GUC
 			<li>a list of all the courses offered by the machine learning department</li>
 		</ul>
 	</li>
-	<li>Events
+	<li><b>Events</b>
 		<ul>
 			<li>Upcoming Events</li>
 			<li>Archieved Events</li>
 		</ul>
 	</li>
-	<li>Contact us
+	<li><b>Contact us</b>
 		<ul>
 			<li>Important emails</li>
+		</ul>
+	</li>
+	<li> <b>About Page (editable)</b>
+		<ul>
+			<li>
+				About the Machine learning department <br> Note: Credits for ourself
+			</li>		
 		</ul>
 	</li>
 
