@@ -50,6 +50,11 @@ a website for the newly created machine learning group in the GUC
 			<li>This should right directly to the server not to the database</li>		
 		</ul>
 	</li>
+	<li> <b>Add/remove members</b>
+		<ul>
+			<li>This page is only visible to the admin</li>
+		<ul>
+	</li>
 	<li> <b>Footer</b>
 		<ul>
 			<li>Copyrights</li>
@@ -59,7 +64,7 @@ a website for the newly created machine learning group in the GUC
 			<li>Instagram</li>
 		<ul>
 	</li>
-
+	
 </ol> 
 
 # <p align = "center">Admins and members auth: </p>
@@ -94,11 +99,12 @@ a website for the newly created machine learning group in the GUC
 	</li>
 	<li><b>Projects</b>
 		<ul>
-		<li>document_type (research/project)</li>
-		<li>title</li>
-		<li>Body NUllable</li>
-		<li>created at</li>
-		<li>Updated at</li>
+			<li>document_type (research/project)</li>
+			<li>title</li>
+			<li>Description</li>
+			<li>research pdf binary</li>
+			<li>created at</li>
+			<li>Updated at</li>
 		</ul>
 	</li>
 	<li><b>Courses</b>
@@ -132,6 +138,7 @@ a website for the newly created machine learning group in the GUC
 	<li>projects and research</li>
 	<li>events</li>
 	<li>Members feature (undecided)</li>
+	<li>Library</li>
 </ol>
 
 # Ahmed Shawky
@@ -140,6 +147,7 @@ a website for the newly created machine learning group in the GUC
 	<li>Courses</li>
 	<li>About page</li>
 	<li>contact</li>
+	<li>Add and remove members</li>
 </ol>
 
 # <p align = "center">Conditions</p>
