@@ -55,6 +55,13 @@ a website for the newly created machine learning group in the GUC
 			<li>This page is only visible to the admin</li>
 		</ul>
 	</li>
+	<li>My account
+		<ul>
+			<li>users can reset their passwords</li>
+			<li>users can change the personal info</li>
+			<li>users can upload a profile picture</li>
+		</ul>
+	</li>
 	<li> <b>Footer</b>
 		<ul>
 			<li>Copyrights</li>
@@ -91,8 +98,7 @@ a website for the newly created machine learning group in the GUC
 <ol>
 	<li><b>Users (default)</b>
 		<ul>
-			<li>Profile picture Nullable</li>
-			<li>Email required</li>
+			<li>Summary</li>
 			<li>Phone number Nullabel</li>
 			<li>Authority</li>
 		</ul>
