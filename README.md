@@ -82,7 +82,7 @@ a website for the newly created machine learning group in the GUC
 		</ul>
 	</li>
 </ul>
-# <p align = "center">Database tables </p>
+<h2 align = "center">Database tables </h2>
 <ol>
 	<li><b>Users (default)</b>
 		<ul>
