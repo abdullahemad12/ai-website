@@ -62,7 +62,7 @@ a website for the newly created machine learning group in the GUC
 
 </ol> 
 
-# <p align = "center">Admins and members auth:</p>
+# <p align = "center">Admins and members auth: </p>
 
 <ul>
 	<li>Admins
@@ -82,9 +82,9 @@ a website for the newly created machine learning group in the GUC
 		</ul>
 	</li>
 </ul>
-# <p align = "center">Database tables</p>
+# <p align = "center">Database tables </p>
 <ol>
-	<li>Users (default)
+	<li><b>Users (default)</b>
 		<ul>
 			<li>Profile picture Nullable</li>
 			<li>Email required</li>
@@ -92,7 +92,7 @@ a website for the newly created machine learning group in the GUC
 			<li>Authority</li>
 		</ul>
 	</li>
-	<li>Projects
+	<li><b>Projects</b>
 		<ul>
 		<li>document_type (research/project)</li>
 		<li>title</li>
@@ -101,7 +101,7 @@ a website for the newly created machine learning group in the GUC
 		<li>Updated at</li>
 		</ul>
 	</li>
-	<li>Courses
+	<li><b>Courses</b>
 		<ul>
 			<li>title</li>
 			<li>Instructor</li>
@@ -110,7 +110,7 @@ a website for the newly created machine learning group in the GUC
 			<li>Updated_at</li>
 		</ul>
 	</li>
-	<li>Events
+	<li><b>Events</b>
 		<ul>
 			<li>title</li>
 			<li>Description</li>
