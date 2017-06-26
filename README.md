@@ -89,8 +89,8 @@ a website for the newly created machine learning group in the GUC
 			<li><b>Events</b> All events are archieved automatically</li>
 			<li><b>Projects and research</b> Add a project or a research</li>
 			<li><b>Projects and research</b> Remove a project or a research</li>
-			<li><b>Courses</b> <Add Courses</li>
-			<li><b>Courses</b> Remove Courses</li>
+			<li><b>Courses</b> Add Courses (Only admins)</li>
+			<li><b>Courses</b> Remove Courses (Only admins)</li>
 			<li><b>About</b> edit the content of the about page</li>
 		</ul>
 	</li>
