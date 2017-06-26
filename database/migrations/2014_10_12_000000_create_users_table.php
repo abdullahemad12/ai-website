@@ -25,6 +25,17 @@ class CreateUsersTable extends Migration
             $table->timestamps(); // created_at & update_at
             $table->engine = "InnoDB";
         });
+        DB::table('users')->insert(
+            array(
+                "name" => "admin",
+                "email"=>"machine_learning_guc@yahoo.com",
+                "summary" => "The admin account. This amdin account allows members to add other members and gives the user elevated privallages",
+                "number" => "16482",
+                "admin" => true,
+                "password" => "~n72>Q+q!:3q-+`kvE.qP7DdWms3RRUJX'%(~hK["
+                )
+
+        );
     }
 
     /**
