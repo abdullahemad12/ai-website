@@ -1,0 +1,57 @@
+.navbar-default
+{
+	background-color: #75a6f4;
+	font-weight: bold;
+	border-color: #91b6f2;
+}
+.navbar-brand img 
+{
+	max-width: 30px;
+	max-width: 30px;
+	margin-top: -5px;
+}
+.dropdown-menu
+{
+	background-color: #ced5ea;
+}
+span #account
+{
+	margin-left:7px; 
+}
+.dropdown-menu #bord
+{
+	height: 30px;
+
+	border-bottom: 1px solid #bec6dd; 
+}
+.body
+{
+	margin-top: 10%;
+	display: block;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.footer
+{
+	display: block;
+	position: absolute;
+	bottom: 0;;
+	text-align: center;
+	width: 100%;
+	margin-left: -11%;
+	margin-right: 0;
+	padding-top: 10px;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 15px;
+	color:grey;
+	background-color: #f2f6ff;
+}
+.footer img
+{
+	max-width: 30px;
+	max-height: 30px;
+	display: inline;
+	margin-right: 1%;
+}

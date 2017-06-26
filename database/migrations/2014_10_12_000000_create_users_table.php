@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Hash;
 
 class CreateUsersTable extends Migration
 {
@@ -32,7 +33,9 @@ class CreateUsersTable extends Migration
                 "summary" => "The admin account. This amdin account allows members to add other members and gives the user elevated privallages",
                 "number" => "16482",
                 "admin" => true,
-                "password" => "~n72>Q+q!:3q-+`kvE.qP7DdWms3RRUJX'%(~hK["
+                "password" => Hash::make("~n72>Q+q!:3q-+`kvE.qP7DdWms3RRUJX'%(~hK["),
+                "created_at" => date("Y-m-d H:i:s"),
+                "updated_at" => date("Y-m-d H:i:s")
                 )
 
         );
