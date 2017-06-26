@@ -55,6 +55,15 @@ a website for the newly created machine learning group in the GUC
 			<li>This page is only visible to the admin</li>
 		</ul>
 	</li>
+	<li><b>My account</b>
+		<ul>
+			<li>users can reset their passwords</li>
+			<li>users can change the personal info</li>
+			<li>users can upload a profile picture</li>
+			<li>Only admins can create new users</li>
+			<li>view all the activities of the users</li>
+		</ul>
+	</li>
 	<li> <b>Footer</b>
 		<ul>
 			<li>Copyrights</li>
@@ -81,8 +90,8 @@ a website for the newly created machine learning group in the GUC
 			<li><b>Events</b> All events are archieved automatically</li>
 			<li><b>Projects and research</b> Add a project or a research</li>
 			<li><b>Projects and research</b> Remove a project or a research</li>
-			<li><b>Courses</b> <Add Courses</li>
-			<li><b>Courses</b> Remove Courses</li>
+			<li><b>Courses</b> Add Courses (Only admins)</li>
+			<li><b>Courses</b> Remove Courses (Only admins)</li>
 			<li><b>About</b> edit the content of the about page</li>
 		</ul>
 	</li>
@@ -91,15 +100,14 @@ a website for the newly created machine learning group in the GUC
 <ol>
 	<li><b>Users (default)</b>
 		<ul>
-			<li>Profile picture Nullable</li>
-			<li>Email required</li>
+			<li>Summary</li>
 			<li>Phone number Nullabel</li>
 			<li>Authority</li>
 		</ul>
 	</li>
-	<li><b>Projects</b>
+	<li><b>Researchs</b>
 		<ul>
-			<li>document_type (research/project)</li>
+			<li>uploader</li>
 			<li>title</li>
 			<li>Description</li>
 			<li>created at</li>
@@ -116,12 +124,21 @@ a website for the newly created machine learning group in the GUC
 		</ul>
 	</li>
 	<li><b>Events</b>
-		<ul>
+		<ul>	
+			<li>Creator</li>
 			<li>title</li>
 			<li>Description</li>
 			<li>Location</li>
 			<li>Starts at</li>
 			<li>Ends at</li>
+		</ul>
+	</li>
+	<li><b>Activities</b>
+		<ul>
+			<li>user_id</li>
+			<li>Activity</li>
+			<li>title</li>
+			<li>date</li>
 		</ul>
 	</li>
 </ol>
