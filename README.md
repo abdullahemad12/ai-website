@@ -106,6 +106,7 @@ a website for the newly created machine learning group in the GUC
 	<li><b>Projects</b>
 		<ul>
 			<li>document_type (research/project)</li>
+			<li>uploader</li>
 			<li>title</li>
 			<li>Description</li>
 			<li>created at</li>
