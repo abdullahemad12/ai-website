@@ -104,9 +104,8 @@ a website for the newly created machine learning group in the GUC
 			<li>Authority</li>
 		</ul>
 	</li>
-	<li><b>Projects</b>
+	<li><b>Researchs</b>
 		<ul>
-			<li>document_type (research/project)</li>
 			<li>uploader</li>
 			<li>title</li>
 			<li>Description</li>
