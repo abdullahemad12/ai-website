@@ -60,6 +60,7 @@ a website for the newly created machine learning group in the GUC
 			<li>users can reset their passwords</li>
 			<li>users can change the personal info</li>
 			<li>users can upload a profile picture</li>
+			<li>Only admins can create new users</li>
 		</ul>
 	</li>
 	<li> <b>Footer</b>
