@@ -8,7 +8,7 @@
 
 	    <!-- CSRF Token -->
 	    <meta name="csrf-token" content="{{ csrf_token() }}">
-		<title>{{ config('app.name', 'Laravel') }}</title>
+		<title>Machine Learning-@yield('title')</title>
 		<!--Css and javascript includes-->
 		<link href = "/css/bootstrap.min.css" rel = "stylesheet">
 		<link href = "/css/default.css" rel = "stylesheet">
@@ -20,7 +20,7 @@
 		<nav class = "navbar navbar-default navbar-fixed-top">
 			<div class = "container-fluid">
 				<div class="navbar-header">
-					<a  class = "navbar-brand" href = "#"><img src = "/img/art/logo.png"></a>
+					<a  class = "navbar-brand" href = "/"><img src = "/img/art/logo.png"></a>
 				</div>
 				<ul class = "nav navbar-nav navbar-right">
 					<li><a href="#">Projects</a></li>
@@ -33,10 +33,15 @@
 				        <ul class="dropdown-menu">
 				        @if(Auth::check())
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
-					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Add Course</b></a></li>
-					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Add Event</b></a></li>
-					        <li id ="bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Add Project</b></a></li>
-					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Manage members</b></a></li>
+					        @if(Auth::user()["admin"])
+					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
+					        @endif()
+					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Event</b></a></li>
+					        
+					        <li id ="bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Project</b></a></li>
+					    	@if(Auth::user()["admin"])
+					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-edit"></span> Manage members</b></a></li>
+					        @endif
 					   		<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><b><span class="glyphicon glyphicon-log-out"></span>Logout</b></a></li>
 					   	@else
 					   		<li><a href="/login"><b><span class="glyphicon glyphicon-log-in"></span> Log in</b></a></li>

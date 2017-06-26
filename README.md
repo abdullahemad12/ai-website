@@ -18,10 +18,13 @@ a website for the newly created machine learning group in the GUC
 	<li><b>projects and research (editable)</b>
 		<ul>
 			<li>
-				A list of all the projects done and in process by the Machine learning departmen
+				index: lists all the projects in the database and adds hyper link to each one
 			</li>
 			<li>
-				A list of all the Research done by the machine learning department
+				project: views the project detail (users can remove a project --Activities is updated--)
+			</li>
+			<li>
+				add: users can add a new project (updates activities)
 			</li>
 		</ul>
 	</li>
@@ -64,13 +67,13 @@ a website for the newly created machine learning group in the GUC
 			<li>view all the activities of the users</li>
 		</ul>
 	</li>
-	<li> <b>Footer</b>
+	<li> <b>Footer &#10004;</b>
 		<ul>
-			<li>Copyrights</li>
-			<li>Github repository</li>
-			<li>Facebook Group</li>
-			<li>Youtube</li>
-			<li>Instagram</li>
+			<li>Copyrights &#10004;</li>
+			<li>Github repository &#10004;</li>
+			<li>Facebook Group &#10004;</li>
+			<li>Youtube &#10004;</li>
+			<li>Instagram &#10004;</li>
 		<ul>
 	</li>
 	
@@ -98,47 +101,47 @@ a website for the newly created machine learning group in the GUC
 </ul>
 <h2 align = "center">Database tables </h2>
 <ol>
-	<li><b>Users (default)</b>
+	<li><b>Users (default)&#10004;</b>
 		<ul>
-			<li>Summary</li>
-			<li>Phone number Nullabel</li>
-			<li>Authority</li>
+			<li>Summary &#10004;</li>
+			<li>Phone number Nullabel &#10004;</li>
+			<li>Authority &#10004;</li>
 		</ul>
 	</li>
 	<li><b>Researchs</b>
 		<ul>
-			<li>uploader</li>
-			<li>title</li>
-			<li>Description</li>
-			<li>created at</li>
-			<li>Updated at</li>
+			<li>uploader &#10004;</li>
+			<li>title &#10004;</li>
+			<li>Description &#10004;</li>
+			<li>created at &#10004;</li>
+			<li>Updated at &#10004;</li>
 		</ul>
 	</li>
 	<li><b>Courses</b>
 		<ul>
-			<li>title</li>
-			<li>Instructor</li>
-			<li>description</li>
-			<li>Created_at</li>
-			<li>Updated_at</li>
+			<li>title &#10004;</li>
+			<li>Instructor &#10004;</li>
+			<li>description &#10004;</li>
+			<li>Created_at &#10004;</li>
+			<li>Updated_at &#10004;</li>
 		</ul>
 	</li>
-	<li><b>Events</b>
+	<li><b>Events &#10004;</b>
 		<ul>	
-			<li>Creator</li>
-			<li>title</li>
-			<li>Description</li>
-			<li>Location</li>
-			<li>Starts at</li>
-			<li>Ends at</li>
+			<li>Creator &#10004;</li>
+			<li>title &#10004;</li>
+			<li>Description &#10004;</li>
+			<li>Location &#10004;</li>
+			<li>Starts at &#10004;</li>
+			<li>Ends at &#10004;</li>
 		</ul>
 	</li>
-	<li><b>Activities</b>
+	<li><b>Activities &#10004;</b>
 		<ul>
-			<li>user_id</li>
-			<li>Activity</li>
-			<li>title</li>
-			<li>date</li>
+			<li>user_id &#10004;</li>
+			<li>Activity &#10004;</li>
+			<li>title &#10004;</li>
+			<li>date &#10004;</li>
 		</ul>
 	</li>
 </ol>
@@ -153,7 +156,7 @@ a website for the newly created machine learning group in the GUC
 	<li>Header and footer &#10004;</li>
 	<li>projects and research</li>
 	<li>events</li>
-	<li>Members feature (undecided)</li>
+	<li>users activities</li>
 	<li>Library</li>
 </ol>
 
