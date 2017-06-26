@@ -61,6 +61,7 @@ a website for the newly created machine learning group in the GUC
 			<li>users can change the personal info</li>
 			<li>users can upload a profile picture</li>
 			<li>Only admins can create new users</li>
+			<li>view all the activities of the users</li>
 		</ul>
 	</li>
 	<li> <b>Footer</b>
@@ -123,12 +124,21 @@ a website for the newly created machine learning group in the GUC
 		</ul>
 	</li>
 	<li><b>Events</b>
-		<ul>
+		<ul>	
+			<li>Creator</li>
 			<li>title</li>
 			<li>Description</li>
 			<li>Location</li>
 			<li>Starts at</li>
 			<li>Ends at</li>
+		</ul>
+	</li>
+	<li><b>Activities</b>
+		<ul>
+			<li>user_id</li>
+			<li>Activity</li>
+			<li>title</li>
+			<li>date</li>
 		</ul>
 	</li>
 </ol>
