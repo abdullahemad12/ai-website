@@ -149,8 +149,8 @@ a website for the newly created machine learning group in the GUC
 
 # Abdullah Emad:
 <ol>
-	<li>Migrations</li>
-	<li>Header and footer</li>
+	<li>Migrations &#10004;</li>
+	<li>Header and footer &#10004;</li>
 	<li>projects and research</li>
 	<li>events</li>
 	<li>Members feature (undecided)</li>
