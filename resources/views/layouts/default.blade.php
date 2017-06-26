@@ -37,7 +37,7 @@
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Add Event</b></a></li>
 					        <li id ="bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Add Project</b></a></li>
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-pencil"></span> Manage members</b></a></li>
-					   		<li><a href="#"><b><span class="glyphicon glyphicon-log-out"></span> Logout</b></a></li>
+					   		<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><b><span class="glyphicon glyphicon-log-out"></span>Logout</b></a></li>
 					   	@else
 					   		<li><a href="/login"><b><span class="glyphicon glyphicon-log-in"></span> Log in</b></a></li>
 					   	@endif
@@ -61,7 +61,9 @@
 
 			</footer>
 		</div>
-	
+		<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+        </form>
 	</body>
 </html>
 
