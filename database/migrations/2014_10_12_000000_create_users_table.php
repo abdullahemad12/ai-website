@@ -14,12 +14,16 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->increments('id'); // primary key
+            $table->string('name'); // full name of the user (permenant)
+            $table->string('email')->unique(); // email of the user (permenant)
+            $table->longText('summary')->nullable();  // description of the user 
+            $table->bigInteger('number')->nullable(); // phone number
+            $table->boolean('admin'); // is this a super user
+            $table->string('password'); // password
+            $table->rememberToken(); 
+            $table->timestamps(); // created_at & update_at
+            $table->engine = "InnoDB";
         });
     }
 
