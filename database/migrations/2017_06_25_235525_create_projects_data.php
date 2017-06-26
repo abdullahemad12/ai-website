@@ -13,7 +13,7 @@ class CreateProjectsData extends Migration
      */
     public function up()
     {
-         Schema::create('researchs', function (Blueprint $table) {
+         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id'); // id of the project
             $table->integer('user_id')->unsigned(); // id of the uploader
             $table->string('title'); // title of the project or the research
@@ -32,6 +32,6 @@ class CreateProjectsData extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('researchs');
+        Schema::dropIfExists('projects');
     }
 }
