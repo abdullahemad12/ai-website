@@ -155,8 +155,8 @@ a website for the newly created machine learning group in the GUC
 	<li>Migrations &#10004;</li>
 	<li>Header and footer &#10004;</li>
 	<li>projects and research</li>
-	<li>events</li>
-	<li>users activities</li>
+	<li>Account</li>
+	<li>users activities &#10004;</li>
 	<li>Library</li>
 </ol>
 
@@ -166,6 +166,7 @@ a website for the newly created machine learning group in the GUC
 	<li>Courses</li>
 	<li>About page</li>
 	<li>contact</li>
+	<li>events</li>
 	<li>Add and remove members</li>
 </ol>
 
