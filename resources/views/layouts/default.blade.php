@@ -42,6 +42,7 @@
 					    	@if(Auth::user()["admin"])
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-edit"></span> Manage members</b></a></li>
 					        @endif
+					        <li id = "bord"><a href="/activities"><b><span class="glyphicon glyphicon-th-list"></span> Activity Log</b></a></li>
 					   		<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><b><span class="glyphicon glyphicon-log-out"></span>Logout</b></a></li>
 					   	@else
 					   		<li><a href="/login"><b><span class="glyphicon glyphicon-log-in"></span> Log in</b></a></li>

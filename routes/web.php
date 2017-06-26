@@ -24,3 +24,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/projects', 'ProjectController@index');
+
+Route::get('/activities', 'ActivityController@index');
