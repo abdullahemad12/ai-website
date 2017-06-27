@@ -15,16 +15,16 @@ a website for the newly created machine learning group in the GUC
 			</li>
 		</ul>
 	</li>
-	<li><b>projects and research (editable)</b>
+	<li><b>projects and research (editable) &#10004;</b>
 		<ul>
 			<li>
-				index: lists all the projects in the database and adds hyper link to each one
+				index: lists all the projects in the database and adds hyper link to each one  &#10004;
 			</li>
 			<li>
-				project: views the project detail (users can remove a project --Activities is updated--)
+				project: views the project detail (users can remove a project --Activities is updated--)  &#10004;
 			</li>
 			<li>
-				add: users can add a new project (updates activities)
+				add: users can add a new project (updates activities)  &#10004;
 			</li>
 		</ul>
 	</li>
@@ -91,8 +91,8 @@ a website for the newly created machine learning group in the GUC
 		<ul>
 			<li><b> Events</b> Create new events</li>
 			<li><b>Events</b> All events are archieved automatically</li>
-			<li><b>Projects and research</b> Add a project or a research</li>
-			<li><b>Projects and research</b> Remove a project or a research</li>
+			<li><b>Projects and research</b> Add a project or a research  &#10004;</li>  
+			<li><b>Projects and research</b> Remove a project or a research  &#10004;</li> 
 			<li><b>Courses</b> Add Courses (Only admins)</li>
 			<li><b>Courses</b> Remove Courses (Only admins)</li>
 			<li><b>About</b> edit the content of the about page</li>
@@ -154,10 +154,10 @@ a website for the newly created machine learning group in the GUC
 <ol>
 	<li>Migrations &#10004;</li>
 	<li>Header and footer &#10004;</li>
-	<li>projects and research</li>
+	<li>projects and research  &#10004;</li>
 	<li>Account</li>
 	<li>users activities &#10004;</li>
-	<li>Library</li>
+	<li>Library  &#10004;</li>
 </ol>
 
 # Ahmed Shawky
