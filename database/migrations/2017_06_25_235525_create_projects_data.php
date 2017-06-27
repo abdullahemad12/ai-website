@@ -18,9 +18,9 @@ class CreateProjectsData extends Migration
             $table->integer('user_id')->unsigned(); // id of the uploader
             $table->string('title'); // title of the project or the research
             $table->longText('description');
+            $table->string('url'); // the url of the stored file
             $table->timestamps(); // created_at &updated_at
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->unique(array('user_id'));
             $table->engine = "InnoDB";
          });
     }

@@ -26,3 +26,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/projects', 'ProjectController@index');
 
 Route::get('/activities', 'ActivityController@index');
+
+Route::get('/projects', 'ProjectController@index');
+
+Route::get('/projects/view/{id}', 'ProjectController@view');
+
+Route::post('/projects/delete/{id}', 'ProjectController@delete');
+
+Route::get('projects/add', 'ProjectController@addView');
+
+Route::post('projects/add', 'ProjectController@add');

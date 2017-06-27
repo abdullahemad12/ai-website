@@ -6,12 +6,6 @@ Latest Activites
 
 @section('content')
 <style>
-	h1
-	{
-		Color:#4286f4;
-		text-align: center;
-		padding-bottom: 30px;
-	}
 	#table
 	{
 		background-color: #fffcff;
@@ -30,12 +24,14 @@ Latest Activites
 		font-size: 14px;
 	}
 </style>
-<h1>Activity Log</h1>
-<div id = "table">
-	<div id = "header" class = "row">
-		<div class = "col-md-9 col-xs-7">Activity</div>
-		<div class = "col-md-3 col-xs-5">Time</div>
+ <div class="panel panel-primary">
+ 	<div class="panel-heading">
+		<div id = "header" class = "row">
+			<div class = "col-md-9 col-xs-7">Activity</div>
+			<div class = "col-md-3 col-xs-5">Time</div>
+		</div>
 	</div>
+	<div class="panel-body">
 	@for($i = 0 ,$n = sizeof($activities); $i < $n; $i++)
 		<div id = "item" class = "row">
 			@if($activities[$i]['activity'] == "delete")
@@ -50,7 +46,7 @@ Latest Activites
 			<div class = "col-md-3 col-xs-5">{{$activities[$i]['created_at']}}</div>
 		</div>
 	@endfor
-
+	</div>
 </div>
 @endsection
 
