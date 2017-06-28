@@ -32,9 +32,6 @@
 		{{$project['description']}}
 	</div>
 </div>
-
-@if($project['url'] != 'none')
-	
 	<div class = "row">
 	<div class = "col-md-4 col-xs-4" style="color:grey; font-size: 12px; font-weight: bold">
 		Uploader: {{$project['name']}}
@@ -47,15 +44,24 @@
 			}
 
 		?>
+@if($project['url'] != 'none')
+	
+
 		<div class="col-md-offset-6 col-md-1 col-xs-offset-6 col-xs-1" style="visibility:{{$visibility}} ">
 			<a class="btn btn-danger" onclick="event.preventDefault();if (confirm('Are you sure you want to delete this?') == true) document.getElementById('delete-form').submit();">Delete</a>
 		</div>
 		<div class = "col-md-1 col-xs-1">
 			<a href="/{{$project['url']}}" class="btn btn-primary">Download</a>
 		</div>
-	</div>
-@endif
+	
+@else
 
+	<div class="col-md-offset-7 col-md-1 col-xs-offset-7 col-xs-1" style="visibility:{{$visibility}} ">
+			<a class="btn btn-danger" onclick="event.preventDefault();if (confirm('Are you sure you want to delete this?') == true) document.getElementById('delete-form').submit();">Delete</a>
+	</div>
+
+@endif
+</div>
 	<form id="delete-form" action="{{'/projects/delete/' . $project['id']}}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
         </form>

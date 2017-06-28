@@ -63,32 +63,39 @@ class ProjectController extends Controller
 			return redirect('/projects/add');
 		}
 
+		// checks whether a file was uploaded
 		if($request->file('file') != null)
 		{
-				//generates a random name
-			$rand_str = "";
-			$hay = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-+&#';
-			for($i = 0; $i < 12; $i++)
-			{
-				$needle = rand(0, strlen($hay));
-				$rand_str = $rand_str . $hay[$needle];
-			}
-
-
-	    	// uploads the file to docs
+			// uploads the file to docs
 	    	$file = $request->file('file');
 			$path = $file->storeAs('docs', $file->getClientOriginalName());
 		
-			//checks for the extension and assigns a random name
-			if($file->getClientOriginalExtension() != "")
+			$rand_str = "";
+			// this makes sure the random generated name is not already in use
+			do
 			{
-				$rand_str = $rand_str . '.' . $file->getClientOriginalExtension();
-			}	
+				//generates a random name
+				$hay = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-+&#';
+				for($i = 0; $i < 12; $i++)
+				{
+					$needle = rand(0, strlen($hay));
+					$rand_str = $rand_str . $hay[$needle];
+				}
+		    
+				//checks for the extension and assigns a random name
+				if($file->getClientOriginalExtension() != "")
+				{
+					$rand_str = $rand_str . '.' . $file->getClientOriginalExtension();
+				}	
+			}while(file_exists($rand_str));
 			
+			
+			// writes a copy of the file to the public directore for access
 			$contents = Storage::get($path);
 			$file_tmp = fopen('docs/'. $rand_str, "w");
 			fwrite($file_tmp, $contents);
 			fclose($file_tmp);
+			Storage::delete($path);
 			$url = 'docs/'. $rand_str;
 			
 
@@ -150,7 +157,10 @@ class ProjectController extends Controller
 	    		$activity->created_at = date("Y-m-d H:i:s");
 	    		$activity->updated_at = date("Y-m-d H:i:s");
 	    		$activity->save();
-
+	    		if(file_exists($project->url))
+	    		{
+	    			unlink($project->url);
+	    		}
 	    		$project->delete();
     		}
     		return redirect('/projects');
