@@ -69,13 +69,12 @@ class ProjectController extends Controller
 			// uploads the file to docs
 	    	$file = $request->file('file');
 			$path = $file->storeAs('docs', $file->getClientOriginalName());
-		
 			$rand_str = "";
 			// this makes sure the random generated name is not already in use
 			do
 			{
 				//generates a random name
-				$hay = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-+&#';
+				$hay = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_';
 				for($i = 0; $i < 12; $i++)
 				{
 					$needle = rand(0, strlen($hay));
@@ -91,6 +90,7 @@ class ProjectController extends Controller
 			
 			
 			// writes a copy of the file to the public directore for access
+			echo($path);
 			$contents = Storage::get($path);
 			$file_tmp = fopen('docs/'. $rand_str, "w");
 			fwrite($file_tmp, $contents);

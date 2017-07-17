@@ -36,3 +36,5 @@ Route::post('/projects/delete/{id}', 'ProjectController@delete');
 Route::get('projects/add', 'ProjectController@addView');
 
 Route::post('projects/add', 'ProjectController@add');
+
+Route::get('/account', 'AccountController@view');

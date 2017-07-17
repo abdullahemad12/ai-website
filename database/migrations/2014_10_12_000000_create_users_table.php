@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
         DB::table('users')->insert(
             array(
                 "name" => "admin",
-                "email"=>"machine_learning_guc@yahoo.com",
+                "email"=>"machinelearning.guc@gmail.com",
                 "summary" => "The admin account. This amdin account allows members to add other members and gives the user elevated privallages",
                 "number" => "16482",
                 "admin" => true,

@@ -32,7 +32,7 @@
 				        <span class="caret"></span></a>
 				        <ul class="dropdown-menu">
 				        @if(Auth::check())
-					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
+					        <li id = "bord"><a href="/account"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
 					        @if(Auth::user()["admin"])
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
 					        @endif
