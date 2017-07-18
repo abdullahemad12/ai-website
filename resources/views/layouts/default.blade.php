@@ -12,6 +12,8 @@
 		<!--Css and javascript includes-->
 		<link href = "/css/bootstrap.min.css" rel = "stylesheet">
 		<link href = "/css/default.css" rel = "stylesheet">
+		@yield('style')
+
 		<script src = "/js/framework/jquery-3.1.1.min.js" type="text/javascript"></script>
 		<script src = "/js/framework/bootstrap.min.js" type="text/javascript"></script>
 	</head>
@@ -32,7 +34,7 @@
 				        <span class="caret"></span></a>
 				        <ul class="dropdown-menu">
 				        @if(Auth::check())
-					        <li id = "bord"><a href="/account"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
+					        <li id = "bord"><a href="/profile"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
 					        @if(Auth::user()["admin"])
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
 					        @endif

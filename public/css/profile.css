@@ -1,0 +1,33 @@
+/*
+* this is the css file for the profile view
+*/
+
+
+#name
+{
+	font-size:50px;
+	font-weight: bold;
+}
+#email, #created_at, #number
+{
+	color:grey;
+	padding-left:1%;
+}
+#summary 
+{
+	color:#4286f4;
+	padding-top: 3%;
+	font-size:24px;
+}
+
+#summary p
+{
+	color:black;
+	font-size:12px;
+}
+#sidebar-header:hover
+{
+	text-decoration: none;
+	color: white;
+
+}
