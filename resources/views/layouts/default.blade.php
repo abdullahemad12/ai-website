@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
 	    <!-- CSRF Token -->
 	    <meta name="csrf-token" content="{{ csrf_token() }}">
 		<title>Machine Learning-@yield('title')</title>
@@ -63,7 +63,7 @@
 					<img src = "/img/footer/glyph-logo_May2016.png"> 
 	 				<img src = "/img/footer/Twitter_Logo_Blue.png">
 	 				<img src = "/img/footer/YouTube-icon-full_color.png">
- 				</p>
+ 				
 
 			</footer>
 		</div>
