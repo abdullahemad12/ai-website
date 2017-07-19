@@ -24,6 +24,10 @@ Projects
 		font-size: 22px;
 		font-weight: bold;
 	}
+	.panel-primary
+	{
+		margin-bottom:20%;
+	}
 
 </style>
  <div class="panel panel-primary">

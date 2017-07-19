@@ -3,16 +3,46 @@ html
 	position: relative;
 	min-height: 100%;
 }
+@media (max-width: 900px) {
+	body 
+	{
+	  padding-top: 60px;   
+	  padding-bottom: 40px;
+	}
+	.navbar-default
+	{
+		font-size:12px;
+	}
+	.navbar-brand
+	{
+		visibility: hidden;
+		max-width: 5px;
+		max-width: 5px;
+		margin-right: -50%;
+		display: inline;
+	}
+
+	.navbar-right li
+	{
+		margin-left:-2%;
+	}
+	.body
+	{
+		padding-bottom:  20%;
+	}
+
+}
+
 .navbar-default
 {
 	background-color: #75a6f4;
 	border-color: #91b6f2;
-	max-height: 100px;
+	max-height: 10%;
 }
 .navbar-brand img 
 {
-	max-width: 30px;
-	max-width: 30px;
+	max-width: 20%;
+	max-width: 20%;
 	margin-top: -5px;
 }
 .dropdown-menu
@@ -21,7 +51,7 @@ html
 }
 span #account
 {
-	margin-left:7px; 
+	margin-left:1%; 
 }
 .dropdown-menu #bord
 {
