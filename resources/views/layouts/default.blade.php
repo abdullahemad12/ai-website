@@ -65,8 +65,6 @@
 					<img src = "/img/footer/glyph-logo_May2016.png"> 
 	 				<img src = "/img/footer/Twitter_Logo_Blue.png">
 	 				<img src = "/img/footer/YouTube-icon-full_color.png">
- 				</p>
-
 			</footer>
 		</div>
 		<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

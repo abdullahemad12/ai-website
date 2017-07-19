@@ -15,7 +15,6 @@ class AccountController extends Controller
 	*/
 	public function __construct()
     {
-        $this->middleware('auth');
     }
 
     /*
@@ -23,6 +22,11 @@ class AccountController extends Controller
     */
     public function addView()
     {
+    	if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
+
     	$user = User::find(Auth::id());
     	if(!$user['admin'])
     	{
@@ -38,6 +42,10 @@ class AccountController extends Controller
 	*/
 	public function viewAuth()
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
 
 		$user = User::find(Auth::id());
 		return view('/accounts/view', compact('user'));
@@ -47,8 +55,15 @@ class AccountController extends Controller
 	*/
 	public function view($id)
 	{
-		$user = User::findOrFail($id);
-		return view('/accounts/member', compact('user'));
+		$user;
+		$member = User::findOrFail($id);
+		$user = User::find(Auth::id());
+		if(Auth::check())
+		{
+			return view('/accounts/member', compact(['member', 'user']));
+		}
+		return view('/accounts/member', compact('member'));
+		
 	}
 	/*
 	* returns a view with all the members displayed
@@ -64,6 +79,11 @@ class AccountController extends Controller
 	*/
 	public function basic()
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
+
 		$user = User::find(Auth::id());
 		return view('/accounts/basic', compact('user'));
 	}
@@ -72,6 +92,11 @@ class AccountController extends Controller
 	*/
 	public function personal()
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
+
 		$user = User::find(Auth::id());
 		return view('/accounts/personal', compact('user'));
 	}
@@ -80,6 +105,11 @@ class AccountController extends Controller
 	*/
 	public function password()
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
+
 		$user = User::find(Auth::id());
 		return view('/accounts/password', compact('user'));
 	}
@@ -89,6 +119,10 @@ class AccountController extends Controller
 	*/ 
 	public function edit_basic(Request $request)
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
 
 		$user = User::find(Auth::id());
 		// doesnot change unless an input is provided
@@ -113,6 +147,10 @@ class AccountController extends Controller
 	*/ 
 	public function edit_personal(Request $request)
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
 
 		$user = User::find(Auth::id());
 		// doesnot change unless an input is provided
@@ -127,6 +165,10 @@ class AccountController extends Controller
 	*/
 	public function edit_password(Request $request)
 	{
+		if(!Auth::check())
+    	{
+    		return redirect('/login');
+    	}
 		// makes sure the user is authenticated first
 		if(!Auth::check())
 		{
