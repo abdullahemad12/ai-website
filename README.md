@@ -60,11 +60,11 @@ a website for the newly created machine learning group in the GUC
 	</li>
 	<li><b>My account</b>
 		<ul>
-			<li>users can reset their passwords</li>
-			<li>users can change the personal info</li>
+			<li>users can reset their passwords &#10004;</li>
+			<li>users can change the personal info &#10004;</li>
 			<li>users can upload a profile picture</li>
-			<li>Only admins can create new users</li>
-			<li>view all the activities of the users</li>
+			<li>Only admins can create new users &#10004;</li>
+			<li>view all the activities of the users &#10004;</li>
 		</ul>
 	</li>
 	<li> <b>Footer &#10004;</b>
@@ -155,9 +155,10 @@ a website for the newly created machine learning group in the GUC
 	<li>Migrations &#10004;</li>
 	<li>Header and footer &#10004;</li>
 	<li>projects and research  &#10004;</li>
-	<li>Account</li>
+	<li>Account &#10004;</li>
 	<li>users activities &#10004;</li>
 	<li>Library  &#10004;</li>
+	<li>Add and remove members&#10004;</li>
 </ol>
 
 # Ahmed Shawky
@@ -167,7 +168,6 @@ a website for the newly created machine learning group in the GUC
 	<li>About page</li>
 	<li>contact</li>
 	<li>events</li>
-	<li>Add and remove members</li>
 </ol>
 
 # <p align = "center">Conditions</p>
