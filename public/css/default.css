@@ -1,6 +1,7 @@
 html {
     position: relative;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 @media (max-width: 900px) {
@@ -52,7 +53,7 @@ span #account {
 }
 
 .body {
-    /*    margin-top: 10%;*/
+    margin-top: 10%;
     display: block;
     margin-bottom: 10%;
 }

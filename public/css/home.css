@@ -5,15 +5,14 @@
 .img {
     object-fit: cover;
     width: 100vw;
-    min-height: 60vh;
-    max-height: 60vh;
+    min-height: 70vh;
+    max-height: 70vh;
 }
 
 .container {
     width: 100%;
     margin-left: 0px;
     padding-left: 0px;
-    /*    margin-top: -7%;*/
 }
 
 @media (max-width: 900px) {
@@ -21,4 +20,36 @@
         position: absolute;
         top: 0;
     }
+}
+
+.body {
+    margin-top: 0%;
+}
+
+.row,
+.col {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.frame {
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px grey;
+    padding: 15px 10px 10px 15px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.element {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.elem-title {
+    color: #A60202;
 }
