@@ -23,18 +23,26 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/projects', 'ProjectController@index');
 
 Route::get('/activities', 'ActivityController@index');
 
+
 Route::get('/projects', 'ProjectController@index');
-
+Route::get('/projects', 'ProjectController@index');
 Route::get('/projects/view/{id}', 'ProjectController@view');
-
 Route::post('/projects/delete/{id}', 'ProjectController@delete');
-
 Route::get('projects/add', 'ProjectController@addView');
-
 Route::post('projects/add', 'ProjectController@add');
 
-Route::get('/account', 'AccountController@view');
+Route::get('/profile', 'AccountController@viewAuth');
+Route::get('/profile/password', 'AccountController@password');
+Route::get('/profile/basic', 'AccountController@basic');
+Route::get('/profile/personal', 'AccountController@personal');
+Route::get('/profile/password', 'AccountController@password');
+Route::get('/members/add', 'AccountController@addView');
+Route::get('/members/{id}', 'AccountController@view');
+
+
+Route::post('/profile/basic', 'AccountController@edit_basic');
+Route::post('/profile/personal', 'AccountController@edit_personal');
+Route::post('/profile/password', 'AccountController@edit_password');

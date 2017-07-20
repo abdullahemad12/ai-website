@@ -12,6 +12,8 @@
 		<!--Css and javascript includes-->
 		<link href = "/css/bootstrap.min.css" rel = "stylesheet">
 		<link href = "/css/default.css" rel = "stylesheet">
+		@yield('style')
+
 		<script src = "/js/framework/jquery-3.1.1.min.js" type="text/javascript"></script>
 		<script src = "/js/framework/bootstrap.min.js" type="text/javascript"></script>
 	</head>
@@ -19,9 +21,7 @@
 		
 		<nav class = "navbar navbar-default navbar-fixed-top">
 			<div class = "container-fluid">
-				<div class="navbar-header">
 					<a  class = "navbar-brand" href = "/"><img src = "/img/art/logo.png"></a>
-				</div>
 				<ul class = "nav navbar-nav navbar-right">
 					<li><a href="/projects">Projects</a></li>
 					<li><a href="#">Courses</a></li>
@@ -32,7 +32,7 @@
 				        <span class="caret"></span></a>
 				        <ul class="dropdown-menu">
 				        @if(Auth::check())
-					        <li id = "bord"><a href="/account"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
+					        <li id = "bord"><a href="/profile"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
 					        @if(Auth::user()["admin"])
 					        <li id = "bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
 					        @endif
@@ -63,7 +63,6 @@
 					<img src = "/img/footer/glyph-logo_May2016.png"> 
 	 				<img src = "/img/footer/Twitter_Logo_Blue.png">
 	 				<img src = "/img/footer/YouTube-icon-full_color.png">
- 				
 
 			</footer>
 		</div>

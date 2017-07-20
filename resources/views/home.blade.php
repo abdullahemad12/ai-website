@@ -1,18 +1,8 @@
 @extends('layouts.default')
-
+@section('style')
+  <link href="/css/home.css" rel="stylesheet">
+@endsection
 @section('content')
-
-<style>
-   .carousel{
-        width: 100vw;
-    }
-.img{
-    width:100%;
-    object-fit: cover;
-    min-height: 60vh;
-    max-height: 60vh;
-}
-</style>
 <div class="">  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -27,6 +17,7 @@
       <div class="item active">
         <img src="https://tctechcrunch2011.files.wordpress.com/2015/02/shutterstock_175625024.jpg"  class="img">
       </div>
+
 
       <div class="item">
         <img src="http://tomtunguz.com/images/ml_icons.jpg"   class="img">

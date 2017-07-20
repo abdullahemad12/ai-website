@@ -23,6 +23,10 @@
 	{
 		margin-right:2%;
 	}
+	#padding
+	{
+		padding-bottom: 20%;
+	}
 </style>
 <div class = "panel panel-info">
 	<div class = "panel-heading" id = "title">
@@ -65,5 +69,5 @@
 	<form id="delete-form" action="{{'/projects/delete/' . $project['id']}}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
         </form>
-
+        <div id = "padding">
 @endsection
