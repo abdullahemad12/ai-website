@@ -39,10 +39,15 @@ Route::get('/profile/password', 'AccountController@password');
 Route::get('/profile/basic', 'AccountController@basic');
 Route::get('/profile/personal', 'AccountController@personal');
 Route::get('/profile/password', 'AccountController@password');
-Route::get('/members/add', 'AccountController@addView');
+Route::get('/members/manage', 'AccountController@manageView');
+Route::get('/members/search/{name}', 'AccountController@search');
+Route::get('/members/delete/{id}', 'AccountController@deleteView');
+Route::get('/members/makeadmin/{id}', 'AccountController@makeadminView');
 Route::get('/members/{id}', 'AccountController@view');
 
 
 Route::post('/profile/basic', 'AccountController@edit_basic');
 Route::post('/profile/personal', 'AccountController@edit_personal');
 Route::post('/profile/password', 'AccountController@edit_password');
+Route::post('/members/delete', 'AccountController@delete');
+Route::post('members/makeadmin', 'AccountController@makeadmin');

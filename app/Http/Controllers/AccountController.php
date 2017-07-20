@@ -20,7 +20,7 @@ class AccountController extends Controller
     /*
     * returns a view to the form which allows the user to add a new member
     */
-    public function addView()
+    public function manageView()
     {
     	if(!Auth::check())
     	{
@@ -34,7 +34,7 @@ class AccountController extends Controller
     		return view('/accounts/view', compact('user', 'error'));
     	}
 
-    	return view('/accounts/add');
+    	return view('/accounts/manage');
     }
 
 	/*
@@ -194,7 +194,132 @@ class AccountController extends Controller
 			return redirect('/profile');
 		}
 		
+	}
 
+	/*
+	* returns a form that requests the users password
+	*/
+	public function deleteView($id)
+	{	
+		// makes sure the user is authenticated 
+		if(!Auth::check())
+		{
+			return redirect('/');
+		}
+		// makes sure the user is an admin
+		if(!User::find(Auth::id())['admin'])
+		{
+			return redirect('/profile');
+		}
+		$user = User::find($id);
+
+		// makes sure it's not the 'admin account'
+		if($user['id'] == 1)
+		{
+			redirect('profile');
+		}
+		$action = "delete";
+		return view('/accounts/auth', compact('action', 'user'));
+
+	}
+	/*
+	* returns a form that requests the users password
+	*/
+	public function makeadminView($id)
+	{
+		// makes sure the user is authenticated 
+		if(!Auth::check())
+		{
+			return redirect('/');
+		}
+		// makes sure the user is an admin
+		if(!User::find(Auth::id())['admin'])
+		{
+			return redirect('/profile');
+		}
+		$user = User::find($id);
+
+		// makes sure it's not the 'admin account'
+		if($user['id'] == 1)
+		{
+			redirect('profile');
+		}
+		$action = "makeadmin";
+		return view('/accounts/auth', compact('action', 'user'));
+	}
+
+	/*
+	* deletes the account of the given
+	*/
+	public function delete(Request $request)
+	{
+		// makes sure the user is authenticated 
+		if(!Auth::check())
+		{
+			return redirect('/');
+		}
+		// makes sure the user is an admin
+		if(!User::find(Auth::id())['admin'])
+		{
+			return redirect('/profile');
+		}
+
+		$auth = User::find(Auth::id());
+		// checks the password
+		if (!Hash::check($request->password, $auth->password)) 
+		{
+			$user = User::find($request->id);
+			$error = "You provided an incorrect Password";
+			$action = "delete";
+			return view('/accounts/auth', compact('action', 'user', 'error'));
+		}
+
+		//deletes the account
+		User::destroy($request->id);
+	}
+
+
+	/*
+	* Makes the account of the given id an admin
+	*/
+	public function makeadmin(Request $request)
+	{
+		// makes sure the user is authenticated 
+		if(!Auth::check())
+		{
+			return redirect('/');
+		}
+		// makes sure the user is an admin
+		if(!User::find(Auth::id())['admin'])
+		{
+			return redirect('/profile');
+		}
+
+		$auth = User::find(Auth::id());
+		// checks the password
+		if (!Hash::check($request->password, $auth->password)) 
+		{
+			$user = User::find($request->id);
+			$error = "You provided an incorrect Password";
+			$action = "makeadmin";
+			return view('/accounts/auth', compact('action', 'user', 'error'));
+		}
+
+		//make admin 
+		$user = findOrFail($request->id);
+		$user->admin = true;
+		$user->save();
+	}
+
+
+
+	/*
+	* Search for a given name in the database and returns if as a json object
+	*/
+	public function search($name)
+	{
+		$users = User::search($name);
+		return json_encode($users,JSON_PRETTY_PRINT);
 	}
 	
 

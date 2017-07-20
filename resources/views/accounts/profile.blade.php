@@ -28,7 +28,7 @@
 			            <i class="fa fa-user"></i> Change Password
 			        </a>
 			        @if($user['admin'])
-			        <a href="#" class="list-group-item">
+			        <a href="/members/manage" class="list-group-item">
 			            <i class="fa fa-folder-open-o"></i> Manage members
 			        </a>
 			        @endif
