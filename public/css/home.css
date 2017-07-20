@@ -1,28 +1,24 @@
-.carousel
-{
+.carousel {
     width: 100vw;
 }
-.img
-{
+
+.img {
     object-fit: cover;
-    min-height: 40vh;
-    max-height: 40vh;
+    width: 100vw;
+    min-height: 60vh;
+    max-height: 60vh;
 }
-.container
-{
-	
-	width:100%;
-	margin-left: 0px;
-	padding-left: 0px;
-	margin-top: -7%;
+
+.container {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    /*    margin-top: -7%;*/
 }
-@media (max-width: 900px) 
-{
-	.body
-	{
-		position: absolute;
-		top:0;
 
-	}
-
+@media (max-width: 900px) {
+    .body {
+        position: absolute;
+        top: 0;
+    }
 }
