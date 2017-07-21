@@ -26,7 +26,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="#">Courses</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="/events">Events</a></li>
                 <li><a href="#">About Us</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span><span id = "account">Account</span>
@@ -37,7 +37,7 @@
                         @if(Auth::user()["admin"])
                         <li id="bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
                         @endif
-                        <li id="bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Event</b></a></li>
+                        <li id="bord"><a href="/events/add"><b><span class="glyphicon glyphicon-file"></span> Add Event</b></a></li>
 
                         <li id="bord"><a href="/projects/add"><b><span class="glyphicon glyphicon-file"></span> Add Project</b></a></li>
                         @if(Auth::user()["admin"])

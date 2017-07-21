@@ -21,14 +21,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Is this line repeated unnecisarily ?
+//Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/activities', 'ActivityController@index');
 
 
 Route::get('/projects', 'ProjectController@index');
-Route::get('/projects', 'ProjectController@index');
+// Is this line repeated unnecisarily ?
+//Route::get('/projects', 'ProjectController@index');
 Route::get('/projects/view/{id}', 'ProjectController@view');
 Route::post('/projects/delete/{id}', 'ProjectController@delete');
 Route::get('projects/add', 'ProjectController@addView');
@@ -46,3 +48,10 @@ Route::get('/members/{id}', 'AccountController@view');
 Route::post('/profile/basic', 'AccountController@edit_basic');
 Route::post('/profile/personal', 'AccountController@edit_personal');
 Route::post('/profile/password', 'AccountController@edit_password');
+
+
+Route::get('/events', 'EventController@index');
+Route::get('/events/add','EventController@addView');
+Route::post('/events/add','EventController@add');
+Route::get('/events/view/{id}','EventController@view');
+Route::post('/events/delete/{id}', 'EventController@delete');

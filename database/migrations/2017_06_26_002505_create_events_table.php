@@ -21,10 +21,10 @@ class CreateEventsTable extends Migration
             $table->string('location');
             $table->dateTime('start_at');
             $table->dateTime('end_at');
+            $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->unique(array('user_id'));
+//            $table->unique(array('user_id'));
             $table->engine = "InnoDB";
-
         });
         
     }
