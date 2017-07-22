@@ -49,23 +49,45 @@
 
     <div id="header" class="col-md-8">
         <div class="frame">
+
+
             <div class="" style="color:#E5DE00;">
-                <h1> <b>Recent Events </b></h1>
+                <h1> <b>Upcoming Events </b></h1>
             </div>
+            @if(sizeOf($newEvents)>0) @foreach($newEvents as $event )
+
             <div class="row element">
-                <h3 class="elem-title">First Article</h3>
-                <p>Lorem Ipsum awh fnks as i aw was walking down the isle and then i found a tree to hide in then she appeared lorem ipsum again!! ath the car i foun The aoa aeeer ooha aelk faefh akljf hakwfh alwkfjhaw foiawhf awfiawhf awfhawfuhergrenhg erubhnjknbcvmbn .d valkjfaowif awfj nhaeufi aehuef a i uaa q wia aiuw dfahwsiauw uae iaw</p>
+                <h2 class="elem-title">{{$event['title']}}</h2>
+                <h4>Location : {{$event['location']}}</h4>
+                <h4>Start at : {{$event['start_at']}}</h4>
+                <h4>End at : {{$event['end_at']}}</h4>
+                <p>{{$event['description']}}</p>
             </div>
+
+            @endforeach @else
+            <h4>No upcomming events</h4>
+            @endif
+
             <hr>
-            <div class="row element">
-                <h3 class="elem-title">Second Article</h3>
-                <p>Lorem Ipsum awh fnks as i aw was walking down the isle and then i found a tree to hide in then she appeared lorem ipsum again!! ath the car i foun The aoa aeeer ooha aelk faefh akljf hakwfh alwkfjhaw foiawhf awfiawhf awfhawfuhergrenhg erubhnjknbcvmbn .d valkjfaowif awfj nhaeufi aehuef a i uaa q wia aiuw dfahwsiauw uae iaw</p>
+
+            <div class="" style="color:#E5DE00;">
+                <h1> <b>Old Events </b></h1>
             </div>
-            <hr>
+            @if(sizeOf($oldEvents)>0) @foreach($oldEvents as $event )
+
             <div class="row element">
-                <h3 class="elem-title">Third Article</h3>
-                <p>Lorem Ipsum awh fnks as i aw was walking down the isle and then i found a tree to hide in then she appeared lorem ipsum again!! ath the car i foun The aoa aeeer ooha aelk faefh akljf hakwfh alwkfjhaw foiawhf awfiawhf awfhawfuhergrenhg erubhnjknbcvmbn .d valkjfaowif awfj nhaeufi aehuef a i uaa q wia aiuw dfahwsiauw uae iaw</p>
+                <h2 class="elem-title">{{$event['title']}}</h2>
+                <h4>Location : {{$event['location']}}</h4>
+                <h4>Start at : {{$event['start_at']}}</h4>
+                <h4>End at : {{$event['end_at']}}</h4>
+                <p>{{$event['description']}}</p>
             </div>
+
+            @endforeach @else
+            <h4>No upcomming events</h4>
+            @endif
+
+
         </div>
     </div>
 

@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Event;
+use Illuminate\Support\Facades\DB;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $newEvents = Event::take(5)
+                  ->where('start_at','>=',DB::raw('NOW()'))
+                  ->orderBy('start_at', 'desc')
+                  ->get();
+        
+        $oldEvents = Event::take(5)
+                    ->where('start_at','<',DB::raw('NOW()'))
+                    ->orderBy('start_at', 'desc')
+                    ->get();
+        return view('home',compact('newEvents'),compact('oldEvents'));
     }
 }
