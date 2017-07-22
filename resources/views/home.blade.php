@@ -54,6 +54,8 @@
             <div class="" style="color:#E5DE00;">
                 <h1> <b>Upcoming Events </b></h1>
             </div>
+
+            <!-- Printing Upcoming Events -->
             @if(sizeOf($newEvents)>0) @foreach($newEvents as $event )
 
             <div class="row element">
@@ -73,6 +75,8 @@
             <div class="" style="color:#E5DE00;">
                 <h1> <b>Old Events </b></h1>
             </div>
+
+            <!-- Printing Old Events -->
             @if(sizeOf($oldEvents)>0) @foreach($oldEvents as $event )
 
             <div class="row element">

@@ -55,3 +55,9 @@ Route::get('/events/add','EventController@addView');
 Route::post('/events/add','EventController@add');
 Route::get('/events/view/{id}','EventController@view');
 Route::post('/events/delete/{id}', 'EventController@delete');
+
+Route::get('/courses','CourseController@index');
+Route::get('/courses/add','CourseController@addView');
+Route::post('/courses/add','CourseController@add');
+Route::get('/courses/view/{id}','CourseController@view');
+Route::post('/courses/delete/{id}', 'CourseController@delete');

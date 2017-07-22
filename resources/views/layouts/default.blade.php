@@ -25,7 +25,7 @@
             <a class="navbar-brand" href="/"><img src="/img/art/logo.png"></a>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/projects">Projects</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="/courses">Courses</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="#">About Us</a></li>
                 <li class="dropdown">
@@ -35,7 +35,7 @@
                         @if(Auth::check())
                         <li id="bord"><a href="/profile"><b><span class="glyphicon glyphicon-user"></span> Profile</b></a></li>
                         @if(Auth::user()["admin"])
-                        <li id="bord"><a href="#"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
+                        <li id="bord"><a href="/courses/add"><b><span class="glyphicon glyphicon-file"></span> Add Course</b></a></li>
                         @endif
                         <li id="bord"><a href="/events/add"><b><span class="glyphicon glyphicon-file"></span> Add Event</b></a></li>
 
