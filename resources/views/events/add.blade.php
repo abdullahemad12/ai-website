@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-6">
                 <div class="form-group  col-md-8 col-xs-8">
-                    <input id="comment_field" class="form-control" type="date" placeholder="Start Time of the Event" name="strtTime" autocomplete="off">
+                    <input id="comment_field" class="form-control" type="datetime-local" placeholder="Start Time of the Event" name="strtTime" autocomplete="off">
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-6">
                 <div class="form-group  col-md-8 col-xs-8">
-                    <input id="comment_field" class="form-control" type="date" placeholder="End Time of the Event" name="endTime" autocomplete="off">
+                    <input id="comment_field" class="form-control" type="datetime-local" placeholder="End Time of the Event" name="endTime" autocomplete="off">
                 </div>
             </div>
         </div>

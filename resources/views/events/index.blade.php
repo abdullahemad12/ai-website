@@ -32,7 +32,8 @@
         @foreach($events as $event)
         <a href="events/view/{{$event['id']}}">
             <div class="row">
-                <h2>{{$event['title']}}</h2><br> {{$event['started_at']}}
+                <h2>{{$event['title']}}</h2>
+                <h5>{{$event['start_at']}}</h5>
                 <h4>location: {{$event['location']}}</h4>
                 <p>{{$event['description']}}</p>
             </div>
