@@ -43,7 +43,9 @@ class EventController extends Controller
     	
     }
 
-   
+   /*   TODO There is a bug when the user enters an invalid  date like 901924-01294-01294 then the server 
+    *   will send a runtime error
+    */
     public function add(Request $request)
     {
     	//checks to see if the user is authenticated
@@ -87,4 +89,34 @@ class EventController extends Controller
 		return redirect('/events');
     }
     
+     /*
+    * Deletes an event from the database
+    */
+    public function delete($id)
+    {
+
+    	//checks if the user trying to delete data is authenticated
+    	if(Auth::check())
+    	{
+    		$event = Event::find($id);
+    		if(sizeof($event) != 0)
+    		{
+    			// creates a new activity for the activity log
+	    		$activity = new Activity();
+	    		$activity->user_id = Auth::id();
+	    		$activity->activity = 'delete';
+	    		$activity->title = $event['title'];
+	    		$activity->created_at = date("Y-m-d H:i:s");
+	    		$activity->updated_at = date("Y-m-d H:i:s");
+	    		$activity->save();
+	    		$event->delete();
+    		}
+    		return redirect('/events');
+    		
+    	}
+    	else
+    	{
+    		return redirect('/login');
+    	}
+    }
 }
