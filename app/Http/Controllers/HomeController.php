@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $newEvents = Event::take(5)
                   ->where('start_at','>=',DB::raw('NOW()'))
-                  ->orderBy('start_at', 'desc')
+                  ->orderBy('start_at')
                   ->get();
         
         $oldEvents = Event::take(5)

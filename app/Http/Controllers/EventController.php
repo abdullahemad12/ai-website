@@ -53,8 +53,8 @@ class EventController extends Controller
     	{
 			return redirect('/login');
     	}
-    	// makes sure there is a title 
-    	if(strlen($request->title) == 0)
+    	// Form validation
+    	if(strlen($request->title) == 0 || strlen($request->description) == 0 || strlen($request->location)==0)
 		{
 			return redirect('/events/add');
 		}
@@ -64,7 +64,14 @@ class EventController extends Controller
         $location = $request->location;
 		$start_at = $request->strtTime;
         $end_at = $request->endTime;
-
+        
+        // Year format validation
+        $year1 = explode('-', $start_at)[0];
+        $year2 = explode('-', $end_at)[0];
+        if(strlen($year1.'')>4 || strlen($year2.'')>4)
+        {
+            return redirect('/events/add');
+        }
 		// creates a new Entity in the database
         $event = new Event();
         $event->user_id = Auth::id();
