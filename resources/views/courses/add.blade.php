@@ -7,8 +7,8 @@
 
     <!-- Title of the Course -->
     <div class="row">
-        <div class="col-md-6 col-xs-6">
-            <div class="form-group  col-md-8 col-xs-8">
+        <div class="col-md-6">
+            <div class="form-group  col-md-8">
                 <label>Title</label>
                 <input id="comment_field" class="form-control" type="text" placeholder="Title of the Course" name="title" autocomplete="off">
             </div>
@@ -18,8 +18,8 @@
 
     <!-- Name of the instructor -->
     <div class="row">
-        <div class="col-md-6 col-xs-6">
-            <div class="form-group  col-md-8 col-xs-8">
+        <div class="col-md-6">
+            <div class="form-group  col-md-8">
                 <label>Instructor</label>
                 <input id="comment_field" class="form-control" type="text" placeholder="Name of the instructor" name="instructor" autocomplete="off">
             </div>
@@ -28,8 +28,8 @@
 
     <!-- Description of the Course -->
     <div class="row">
-        <div class="col-md-6 col-xs-6">
-            <div class="form-group  col-md-12 col-xs-12">
+        <div class="col-md-6">
+            <div class="form-group  col-md-12">
                 <label>Description</label>
                 <textarea id="comment_field" class="form-control" placeholder="Description for the Course" name="description" autocomplete="off" rows="10" columns="30"></textarea>
             </div>
@@ -38,9 +38,9 @@
 
     <!-- Submit -->
     <div class="row">
-        <div class="col-md-4 col-xs-4">
+        <div class="col-md-4">
         </div>
-        <div class="col-md-offset-1 col-md-1 col-xs-offset-1 col-xs-2">
+        <div class="col-md-offset-1 col-md-1">
             <div class="form-group">
                 <button type="submit" class="btn btn-default" id="submit ">Submit</button>
             </div>
