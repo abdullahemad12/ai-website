@@ -323,4 +323,8 @@ class AccountController extends Controller
 	}
 	
 
+	/*
+	* Add a new member
+	*/
+
 }
