@@ -53,12 +53,12 @@ a website for the newly created machine learning group in the GUC
 			<li>This should right directly to the server not to the database</li>		
 		</ul>
 	</li>
-	<li> <b>Add/remove members</b>
+	<li> <b>Add/remove members&#10004;</b>
 		<ul>
-			<li>This page is only visible to the admin</li>
+			<li>This page is only visible to the admin &#10004;</li>
 		</ul>
 	</li>
-	<li><b>My account</b>
+	<li><b>My account &#10004;</b>
 		<ul>
 			<li>users can reset their passwords &#10004;</li>
 			<li>users can change the personal info &#10004;</li>
@@ -84,7 +84,7 @@ a website for the newly created machine learning group in the GUC
 <ul>
 	<li>Admins
 		<ul>
-			<li>Remove and add members</li>
+			<li>Remove and add members &#10004;</li>
 		</ul>
 	</li>
 	<li>Both
