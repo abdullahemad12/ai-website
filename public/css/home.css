@@ -8,7 +8,10 @@
     min-height: 70vh;
     max-height: 70vh;
 }
-
+html
+{
+    overflow-x: hidden;
+}
 .container {
     width: 100%;
     margin-left: 0px;
