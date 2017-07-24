@@ -15,20 +15,16 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-// Is this line repeated unnecisarily ?
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 
 Route::get('/activities', 'ActivityController@index');
 
 
 Route::get('/projects', 'ProjectController@index');
-// Is this line repeated unnecisarily ?
-//Route::get('/projects', 'ProjectController@index');
 Route::get('/projects/view/{id}', 'ProjectController@view');
 Route::post('/projects/delete/{id}', 'ProjectController@delete');
 Route::get('/projects/add', 'ProjectController@addView');

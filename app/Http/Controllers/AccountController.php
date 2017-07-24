@@ -347,7 +347,16 @@ class AccountController extends Controller
 	*/
 	public function search($name)
 	{
-		$users = User::search($name);
+		$users;
+		if($name == "all")
+		{
+			$users = User::get();
+		}
+		else
+		{
+			$users = User::search($name);
+
+		}
 		return json_encode($users,JSON_PRETTY_PRINT);
 	}
 	
