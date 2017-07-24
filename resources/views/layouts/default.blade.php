@@ -25,8 +25,8 @@
 					<a  class = "navbar-brand" href = "/"><img src = "/img/art/logo.png"></a>
 				<ul class = "nav navbar-nav navbar-right">
 					<li><a href="/projects">Projects</a></li>
-					<li><a href="#">Courses</a></li>
-					<li><a href="#">Events</a></li>
+					<li><a href="/courses">Courses</a></li>
+					<li><a href="/events">Events</a></li>
 					<li><a href="#">About Us</a></li>
 					<li class="dropdown">
 				        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span><span id = "account">Account</span>
