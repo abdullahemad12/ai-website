@@ -41,7 +41,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Add a new member</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="/members/add">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -76,11 +76,14 @@
                             <label for="password" class="col-md-4 control-label">Admin?</label>
 
                             <div class="col-md-6">
-                                <input type="checkbox" name="admin" value="car">
+                                <input type="checkbox" name="admin" value="admin">
                             </div>
                         </div>
 
 
+                         @if(isset($error))
+                             <div style="color:red">{{$error}}</div>
+                             @endif
                         <div class="form-group">
                             <div class="col-md-2 col-md-offset-7">
                                 <button type="submit" class="btn btn-primary">
@@ -93,4 +96,5 @@
             </div>
         </div>
     </div>
+
 @endsection

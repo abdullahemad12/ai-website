@@ -31,8 +31,8 @@ Route::get('/projects', 'ProjectController@index');
 Route::get('/projects', 'ProjectController@index');
 Route::get('/projects/view/{id}', 'ProjectController@view');
 Route::post('/projects/delete/{id}', 'ProjectController@delete');
-Route::get('projects/add', 'ProjectController@addView');
-Route::post('projects/add', 'ProjectController@add');
+Route::get('/projects/add', 'ProjectController@addView');
+Route::post('/projects/add', 'ProjectController@add');
 
 Route::get('/profile', 'AccountController@viewAuth');
 Route::get('/profile/password', 'AccountController@password');
@@ -50,4 +50,6 @@ Route::post('/profile/basic', 'AccountController@edit_basic');
 Route::post('/profile/personal', 'AccountController@edit_personal');
 Route::post('/profile/password', 'AccountController@edit_password');
 Route::post('/members/delete', 'AccountController@delete');
-Route::post('members/makeadmin', 'AccountController@makeadmin');
+Route::post('/members/makeadmin', 'AccountController@makeadmin');
+Route::post('/members/add', 'AccountController@CreateMember');
+
