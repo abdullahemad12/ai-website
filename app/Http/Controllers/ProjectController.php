@@ -58,7 +58,7 @@ class ProjectController extends Controller
 			return redirect('/login');
     	}
     	// makes sure there is a title 
-    	if(strlen($request->title) == 0 ||strlen($request->description) == 0)
+    	if(strlen($request->title) == 0 ||strlen($request->summary) == 0)
 		{
 			return redirect('/projects/add');
 		}
